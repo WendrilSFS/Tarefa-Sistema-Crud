@@ -60,7 +60,6 @@ table{
     height: auto;
     background: rgba(255, 253, 253, 0.633);
     
-    
 }
 
 .botao {
@@ -82,4 +81,8 @@ table{
 .botao:hover{
     transform: translateY(-5px);
     color: blue;
+}
+
+table a{
+    text-decoration: none;
 }

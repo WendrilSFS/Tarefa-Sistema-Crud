@@ -44,9 +44,9 @@ h1{
     display: grid;
     padding: 1rem;
     grid-template-rows: repeat(3, 1fr);  
-    grid-template-columns: repeat(3, 1fr); 
-    gap: 10px;  
-    height: 250px;
+    grid-template-columns: repeat(2, 2fr); 
+    gap: 50px;  
+    height: auto;
     width: 500px;
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(5px);
@@ -63,7 +63,7 @@ h1{
     cursor: pointer;
     background-color: transparent;
     border: 1.5px solid #ffffff;
-    height: 35px;
+    height: 40px;
     border-radius: 6px;
     transition: 0.2s ease;
     width: 100%;  

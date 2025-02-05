@@ -7,7 +7,7 @@
     $dados = new Cliente('','','');
     $cliente = $dados->buscar();
 
-    if(isset($_POST['cadastrar'])){
+    if(isset($_POST['Cadastrar'])){
         $nome = $_POST['nome'];
         $cpf = $_POST['cpf'];
         $email = $_POST['email'];

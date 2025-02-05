@@ -19,8 +19,6 @@
         <div class="button-container">
             <a href="View/CadastrarCliente.php"><button>Cadastrar Cliente</button></a>
             <a href="View/CadastrarProduto.php"><button>Cadastrar Produto</button></a>
-            <a href="View/EditarCliente.php"><button>Editar Cliente</button></a>
-            <a href="View/EditarProduto.php"><button>Editar Produto</button></a>
             <a href="View/ListarCliente.php"><button>Listar Clientes</button></a>
             <a href="View/ListarProduto.php"><button>Listar Produtos</button></a>
             <a href="View/emitir_nota.php"><button>Emitir e Listar Notas</button></a>
