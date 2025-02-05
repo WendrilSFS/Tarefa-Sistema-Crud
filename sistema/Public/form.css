@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-image: url('https://mercadoeconsumo.com.br/wp-content/uploads/2021/03/bigstock-Shopping-Online-E-commerce-Co-392627966.jpg');
+    background-size: cover;
+    background-color: rgba(43, 59, 54, 0.216);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    color: rgb(0, 0, 0);
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    font-size: 1rem;
+    width: 100%;
+    justify-content: center;
+    gap: 1rem;
+    position:absolute;
+    top: 1rem;
+
+}
+
+form{
+    display: grid;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 1rem;
+    grid-template-rows: repeat(3, 1fr);  
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 10px;  
+    height: 250px;
+    width: 500px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 30px rgba(58, 4, 4, 0.216);
+    border-radius: 10px;
+    align-items: center;
+    
+}
+
+table{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid black;
+    width: 600px;
+    height: auto;
+    background: rgba(255, 255, 255, 0.2);
+    
+}
+
+.botao{
+    display: flex;
+    font-size: 0.7rem;
+    cursor: pointer;
+    background-color: transparent;
+    height: 35px;
+    border-radius: 15px;
+    transition: 0.2s ease;
+    width: 40%;  
+    margin-top: 0;
+    color: brown;
+
+}
+
+.botao:hover{
+    transform: translateY(-5px);
+    color: blue;
+}
