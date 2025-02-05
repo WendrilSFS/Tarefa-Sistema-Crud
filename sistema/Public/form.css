@@ -33,7 +33,7 @@ h1{
 }
 
 form{
-    display: grid;
+    display: flex;
     justify-content: space-evenly;
     flex-direction: column;
     align-items: center;
@@ -43,11 +43,9 @@ form{
     grid-template-rows: repeat(3, 1fr);  
     grid-template-columns: repeat(3, 1fr); 
     gap: 10px;  
-    height: 250px;
     width: 500px;
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-shadow: 0 0 30px rgba(58, 4, 4, 0.216);
     border-radius: 10px;
@@ -56,19 +54,19 @@ form{
 }
 
 table{
-    display: flex;
-    justify-content: space-between;
     flex-direction: column;
-    align-items: center;
     border: 2px solid black;
-    width: 600px;
+    width: 80%;
     height: auto;
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 253, 253, 0.633);
+    
     
 }
 
-.botao{
+.botao {
     display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 0.7rem;
     cursor: pointer;
     background-color: transparent;
@@ -76,10 +74,10 @@ table{
     border-radius: 15px;
     transition: 0.2s ease;
     width: 40%;  
-    margin-top: 0;
+    margin: 0 auto;
     color: brown;
-
 }
+
 
 .botao:hover{
     transform: translateY(-5px);
