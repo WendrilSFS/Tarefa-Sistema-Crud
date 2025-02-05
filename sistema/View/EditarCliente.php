@@ -1,6 +1,7 @@
 <?php
 
 include ('../DB/Database.php');
+include ('../menu.php');
 
 $database = "sistema";
 $host = "localhost"; 
@@ -63,6 +64,7 @@ $conn->close();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edição de Clientes</title>
     <link rel="stylesheet" href="../Public/form.css">
+    <link rel="stylesheet" href="../Public/menu.css">
 </head>
 <body>
 
@@ -70,13 +72,13 @@ $conn->close();
 
     <form id="formulario" method="post">
         <label for="Nome">NOME</label>
-        <input type="text" name="nome" id="nome" value="<?php echo isset($nome) ? $nome : ''; ?>">
+        <input placeholder="Atualizar Nome" type="text" name="nome" id="nome">
         <br>
         <label for="CPF">CPF</label>
-        <input type="text" name="cpf" id="cpf" value="<?php echo isset($cpf) ? $cpf : ''; ?>">
+        <input placeholder="Atualizar cpf" type="text" name="cpf" id="cpf" value="<?php echo isset($cpf) ? $cpf : ''; ?>">
         <br>
         <label for="E-mail">E-MAIL</label>
-        <input type="text" name="email" id="email" value="<?php echo isset($email) ? $email : ''; ?>">
+        <input placeholder="Atualizar email" type="text" name="email" id="email" value="<?php echo isset($email) ? $email : ''; ?>">
         <br>
         <input class="botao" type="submit" name="salvar" value="Salvar">
     </form>

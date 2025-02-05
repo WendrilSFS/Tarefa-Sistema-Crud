@@ -1,6 +1,7 @@
 <?php
 
-require('../DB/Database.php'); 
+require('../DB/Database.php');
+include ('../menu.php'); 
 
 $database = "sistema";
 $host = "localhost";  // IP DO BANCO DE DADOS
@@ -36,6 +37,7 @@ $conn->close();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TABELA</title>
     <link rel="stylesheet" href="../Public/form.css">
+    <link rel="stylesheet" href="../Public/menu.css">
 
     
 </head>

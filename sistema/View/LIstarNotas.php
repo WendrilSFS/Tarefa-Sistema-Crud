@@ -6,6 +6,7 @@ $user = "root";
 $password = "";
 
 require('../DB/Database.php');
+include ('../menu.php');
 
 $conn = new mysqli($host, $user, $password, $database);
 
@@ -28,6 +29,7 @@ $result = $conn->query($sql);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Listar Notas Fiscais</title>
     <link rel="stylesheet" href="../Public/form.css">
+    <link rel="stylesheet" href="../Public/menu.css">
 </head>
 <body>
 

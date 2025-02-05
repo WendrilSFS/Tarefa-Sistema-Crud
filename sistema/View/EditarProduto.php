@@ -1,6 +1,7 @@
 <?php
 
 include ('../DB/Database.php');
+include ('../menu.php');
 
 
 $database = "sistema";
@@ -63,6 +64,7 @@ $conn->close();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Produto</title>
     <link rel="stylesheet" href="../Public/form.css">
+    <link rel="stylesheet" href="../Public/menu.css">
 </head>
 <body>
 
@@ -70,13 +72,13 @@ $conn->close();
 
     <form id="formulario" method="post">
         <label for="Nome">NOME</label>
-        <input type="text" name="nome" id="nome" value="<?php echo isset($nome) ? $nome : ''; ?>">
+        <input placeholder="Atualizar Produto" type="text" name="nome" id="nome" value="<?php echo isset($nome) ? $nome : ''; ?>">
         <br>
         <label for="CPF">VALOR</label>
-        <input type="text" name="valor" id="valor" value="<?php echo isset($valor) ? $valor : ''; ?>">
+        <input placeholder="Atualizar Valor" type="text" name="valor" id="valor" value="<?php echo isset($valor) ? $valor : ''; ?>">
         <br>
         <label for="Quantidade">QUANTIDADE</label>
-        <input type="text" name="quantidade" id="quantidade" value="<?php echo isset($quantidade) ? $quantidade : ''; ?>">
+        <input placeholder="Atualizar Quantidade" type="text" name="quantidade" id="quantidade" value="<?php echo isset($quantidade) ? $quantidade : ''; ?>">
         <br>
         <input class="botao" type="submit" name="salvar" value="Salvar">
     </form>

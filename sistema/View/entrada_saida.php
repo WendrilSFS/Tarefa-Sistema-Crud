@@ -2,6 +2,8 @@
 
 require ('../Model/Produto.php');
 require_once '../DB/Database.php';
+include ('../menu.php');
+
 
 $database = "sistema";
 $host = "localhost";
@@ -55,6 +57,7 @@ if (isset($_POST['registrar_saida'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>REGISTRAR ENTRADA E SAÍDA</title>
     <link rel="stylesheet" href="../Public/form.css">
+    <link rel="stylesheet" href="../Public/menu.css">
 </head>
 <body>
 
@@ -62,7 +65,7 @@ if (isset($_POST['registrar_saida'])) {
 
 <form method="post" action="entrada_saida.php">
     <label for="produto_id">PRODUTO:</label>
-    <input id="produto_id" name="produto_id">
+    <input placeholder="Informar ID do Produto" id="produto_id" name="produto_id">
         <?php
         $sql = "SELECT id, nome FROM produto";
         $result = $conn->query($sql);
@@ -73,7 +76,7 @@ if (isset($_POST['registrar_saida'])) {
     </select><br>
 
     <label for="quantidade">QUANTIDADE:</label>
-    <input type="number" id="quantidade" name="quantidade"><br>
+    <input placeholder="Informar Quantidade de Saída ou Entrada" type="number" id="quantidade" name="quantidade"><br>
 
     <input type="submit" name="registrar_entrada" value="Registrar Entrada">
     <input type="submit" name="registrar_saida" value="Registrar Saída">

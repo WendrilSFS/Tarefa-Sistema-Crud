@@ -1,6 +1,7 @@
 <?php
      
     require ('../Model/Cliente.php');
+    include ('../menu.php');
 
 
     $dados = new Cliente('','','');
@@ -31,6 +32,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastrar Cliente</title>
     <link rel="stylesheet" href="../Public/form.css">
+    <link rel="stylesheet" href="../Public/menu.css">
 </head>
 <body>
     <h1>CADASTRAR CLIENTE</h1>

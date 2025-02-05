@@ -7,6 +7,7 @@ $password = "";
 
 require('../DB/Database.php');
 require ('../Model/Estoque.php');
+include ('../menu.php');
 
 $conn = new mysqli($host, $user, $password, $database);
 
@@ -54,28 +55,29 @@ $conn->close();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EMITIR NOTA FISCAL</title>
     <link rel="stylesheet" href="../Public/form.css">
+    <link rel="stylesheet" href="../Public/menu.css">
 </head>
 <body>
 
 <form method="post" action="emitir_nota.php">
     <label for="numero">NÚMERO DA NOTA:</label>
-    <input type="text" id="numero" name="numero"><br>
+    <input placeholder="Adicionar numero da nota" type="text" id="numero" name="numero"><br>
 
     <label for="data">DATA:</label>
     <input type="date" id="data" name="data"><br>
 
     <label for="cliente_id">CLIENTE:</label>
-    <input id="cliente_id" name="cliente_id">
+    <input placeholder="Inserir ID do Cliente" id="cliente_id" name="cliente_id">
     
     </select><br>
 
     <label for="produto_id">PRODUTO:</label>
-    <input id="produto_id" name="produto_id">
+    <input placeholder="Inserir ID do Produto" id="produto_id" name="produto_id">
 
     </select><br>
 
     <label for="quantidade">QUANTIDADE:</label>
-    <input type="number" id="quantidade" name="quantidade"><br>
+    <input placeholder="Informar Quantidade Vendida" type="number" id="quantidade" name="quantidade"><br>
 
     <input type="submit" name="emitir" value="Emitir Nota Fiscal">
 </form>

@@ -2,6 +2,7 @@
 
 require ('../Model/Produto.php');
 require_once '../DB/Database.php';
+include ('../menu.php');
 
 $database = "sistema";
 $host = "localhost";
@@ -43,6 +44,7 @@ if (isset($_POST['Cadastrar'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CADASTRAR PRODUTO</title>
     <link rel="stylesheet" href="../Public/form.css">
+    <link rel="stylesheet" href="../Public/menu.css">
 </head>
 <body>
     <h1> CADASTRAR PRODUTOS</h1>
